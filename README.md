@@ -5,17 +5,17 @@ Reads TI INA226 current sense amplifiers included on some development platforms,
 Automatically finds any INA* devices and logs all.
 
 Tested on:
-
-Xilinx ZCU102
-Avnet Ultra96 v1
-
+<br>
+Xilinx ZCU102 <br>
+Avnet Ultra96 v1 <br>
+<br>
 Usage:
-
+<br>
 ./ina_bm
-
--n number of samples (default: 1)
--t period between samples (default: 1)
--l list all found INA devices at start
--o specify output text file (default: out.txt)
-
+<br>
+-n number of samples (default: 1) <br>
+-t period between samples (default: 1) <br>
+-l list all found INA devices at start <br>
+-o specify output text file (default: out.txt) <br>
+<br>
 Run app with & at end of line to run in background.
