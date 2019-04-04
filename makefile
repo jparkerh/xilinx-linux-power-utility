@@ -52,7 +52,7 @@ ina_bm.elf.size: ina_bm.elf
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(CPP_DEPS)$(ELFSIZE) ina_bm.elf
+	-$(RM) $(ELFSIZE) ina_bm.elf
 	-@echo ' '
 
 secondary-outputs: $(ELFSIZE)
