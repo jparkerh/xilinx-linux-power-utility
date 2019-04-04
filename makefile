@@ -30,19 +30,19 @@ endif
 
 
 # All Target
-all: ina_bm.elf secondary-outputs
+all: ina_bm secondary-outputs
 
 # Tool invocations
-ina_bm.elf: $(OBJS)  $(USER_OBJS)
+ina_bm: $(OBJS)  $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: CXX'
-	$(CXX)  -o "ina_bm.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	$(CXX)  -o "ina_bm" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(ELFSIZE) ina_bm.elf
+	-$(RM) $(ELFSIZE) ina_bm
 	-@echo ' '
 
 secondary-outputs: $(ELFSIZE)
