@@ -1,7 +1,3 @@
-################################################################################
-# Automatically-generated file. Do not edit!
-################################################################################
-
 LD_SRCS := 
 C_UPPER_SRCS := 
 CXX_SRCS := 
@@ -14,7 +10,7 @@ S_UPPER_SRCS :=
 O_SRCS := 
 CC_DEPS := 
 EXECUTABLES := 
-OBJS := 
+OBJS := src/ina_bm.cc
 C_UPPER_DEPS := 
 CXX_DEPS := 
 S_UPPER_DEPS := 
