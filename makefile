@@ -28,10 +28,6 @@ endif
 
 -include ../makefile.defs
 
-# Add inputs and outputs from these tool invocations to the build variables 
-ELFSIZE += \
-ina_bm.elf.size \
-
 
 # All Target
 all: ina_bm.elf secondary-outputs
@@ -39,15 +35,9 @@ all: ina_bm.elf secondary-outputs
 # Tool invocations
 ina_bm.elf: $(OBJS)  $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Invoking: ARM v8 Linux g++ linker'
-	aarch64-linux-gnu-g++  -o "ina_bm.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Invoking: CXX'
+	$(CXX)  -o "ina_bm.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
-	@echo ' '
-
-ina_bm.elf.size: ina_bm.elf
-	@echo 'Invoking: ARM v8 Linux Print Size'
-	aarch64-linux-gnu-size ina_bm.elf  |tee "ina_bm.elf.size"
-	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
